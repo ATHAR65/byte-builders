@@ -1,0 +1,41 @@
+.reveal {
+  animation: revealUp 0.8s ease both;
+}
+
+.reveal:nth-child(2) { animation-delay: 0.12s; }
+.reveal:nth-child(3) { animation-delay: 0.24s; }
+.reveal:nth-child(4) { animation-delay: 0.36s; }
+
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal-on-scroll.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.shape-1 { animation: floatY 9s ease-in-out infinite; }
+.shape-2 { animation: floatY 12s ease-in-out infinite reverse; }
+.shape-3 { animation: floatY 10s ease-in-out infinite; }
+
+.scroll-indicator {
+  animation: bounceY 1.8s ease-in-out infinite;
+}
+
+@keyframes revealUp {
+  from { opacity: 0; transform: translateY(18px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes floatY {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-18px); }
+}
+
+@keyframes bounceY {
+  0%, 100% { transform: translate(-50%, 0); }
+  50% { transform: translate(-50%, -8px); }
+}

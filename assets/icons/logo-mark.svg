@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Byte Builders logo mark">
+  <rect x="4" y="4" width="56" height="56" rx="14" fill="#111827" stroke="#00c9a7"/>
+  <path d="M20 18v28M44 18v28M20 32h24" stroke="#f9fafb" stroke-width="4" stroke-linecap="round"/>
+</svg>
