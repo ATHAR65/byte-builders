@@ -77,3 +77,15 @@ if (cursorDot && window.matchMedia("(pointer:fine)").matches) {
     cursorDot.style.top = `${event.clientY}px`;
   });
 }
+
+const contactForm = document.querySelector("form[name='project-inquiry']");
+if (contactForm) {
+  const isLocalPreview = ["localhost", "127.0.0.1"].includes(window.location.hostname);
+  if (isLocalPreview) {
+    // Local static servers cannot process POST forms, so we simulate success.
+    contactForm.addEventListener("submit", (event) => {
+      event.preventDefault();
+      window.location.href = "thank-you.html";
+    });
+  }
+}
