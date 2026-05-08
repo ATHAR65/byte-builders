@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://bytebuilders.dev/sitemap.xml
+Sitemap: https://swiftsitedev.dev/sitemap.xml
